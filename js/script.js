@@ -38,7 +38,6 @@ function displayAudios() {
         const button = document.createElement('div');
         button.classList.add('btn');
         button.id = `pad1-btn-${i}`;
-        button.innerText = `Pad 1 - ${keysPad1[i]}`;
         button.addEventListener('click', () => playAudio(audios.pad1[i]));
         pad1Container.appendChild(button);
     }
@@ -48,7 +47,6 @@ function displayAudios() {
         const button = document.createElement('div');
         button.classList.add('btn');
         button.id = `pad2-btn-${i}`;
-        button.innerText = `Pad 2 - ${keysPad2[i]}`;
         button.addEventListener('click', () => playAudio(audios.pad2[i]));
         pad2Container.appendChild(button);
     }
