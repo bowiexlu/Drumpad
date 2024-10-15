@@ -16,8 +16,7 @@ overflow: auto;
 }
 .pads {
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
-	gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	justify-content: center;
 }
 

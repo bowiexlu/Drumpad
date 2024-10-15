@@ -38,7 +38,6 @@ function displayAudios() {
         const button = document.createElement('div');
         button.classList.add('btn');
         button.id = `pad1-btn-${i}`;
-        button.innerText = `Pad 1 - ${keysPad1[i]}`;
         button.addEventListener('click', () => playAudio(audios.pad1[i]));
         pad1Container.appendChild(button);
     }
@@ -48,7 +47,6 @@ function displayAudios() {
         const button = document.createElement('div');
         button.classList.add('btn');
         button.id = `pad2-btn-${i}`;
-        button.innerText = `Pad 2 - ${keysPad2[i]}`;
         button.addEventListener('click', () => playAudio(audios.pad2[i]));
         pad2Container.appendChild(button);
     }
@@ -62,11 +60,11 @@ function switchPad(padNumber) {
     currentPad = padNumber;
     
     if (padNumber === 1) {
-        document.getElementById('pad1').style.display = 'flex';
+        document.getElementById('pad1').style.display = 'grid';
         document.getElementById('pad2').style.display = 'none';
     } else {
         document.getElementById('pad1').style.display = 'none';
-        document.getElementById('pad2').style.display = 'flex';
+        document.getElementById('pad2').style.display = 'grid';
     }
 }
 
