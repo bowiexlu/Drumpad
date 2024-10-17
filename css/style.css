@@ -16,8 +16,9 @@ overflow: hidden;
 }
 .pads {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	align-items: stretch;
+    justify-items: center;
 	gap: 5px;
 	overflow: hidden;
 }
@@ -28,7 +29,7 @@ overflow: hidden;
 	margin: 5px;
 	border-radius: 10px;
 	box-shadow: 0px 8px #bbb;
-	width: 12vw;
+	max-width: 12vw;
 	height: 12vw;
 }
 
