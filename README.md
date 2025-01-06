@@ -1,4 +1,11 @@
-Drumpad
+# Project Name: Drumpad
+
+
+## Live Demo 
+https://bowiexlu.github.io/Drumpad/
+
+
+## This is the description of my project:
 
 En kund har beställt en drumpad som han kan använda när han gör musik. Han använder i normala fall en Ipad.
 
